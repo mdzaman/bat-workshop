@@ -9,7 +9,7 @@ Team 04
 4. Abu Sahadat
 5. Md. Mazharul Islam
 6. Israfil Alam
-7. Md. Ariful Rahman
+7. Md. Arifur Rahman
 8. Nurul Haque Mazumder
 
 ```
