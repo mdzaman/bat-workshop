@@ -1,0 +1,48 @@
+erDiagram
+    Users ||--o{ VCards : "creates"
+    Users ||--o{ ShareLinks : "owns"
+    VCards ||--o{ ShareLinks : "generates"
+
+    Users {
+        objectId _id PK
+        string username
+        string email
+        string password
+        string firstName
+        string lastName
+        string profilePicture
+        datetime createdAt
+        datetime updatedAt
+        datetime lastLogin
+        string status
+        array roles
+        object preferences
+    }
+
+    VCards {
+        objectId _id PK
+        objectId userId FK
+        string cardType
+        string title
+        string templateId
+        object designConfig
+        object contactInfo
+        array socialLinks
+        string qrCodeUrl
+        string publicShareLink
+        datetime createdAt
+        datetime updatedAt
+        boolean isPublic
+    }
+
+    ShareLinks {
+        objectId _id PK
+        objectId cardId FK
+        objectId userId FK
+        string uniqueShareId
+        datetime expiresAt
+        number accessCount
+        number maxAccesses
+        datetime createdAt
+        string status
+    }
