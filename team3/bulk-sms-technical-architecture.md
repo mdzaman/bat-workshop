@@ -1,7 +1,7 @@
 # Technical Architecture for Bulk SMS SaaS Platform
 
 ## 1. High-Level System Architecture
-![System Architecture Diagram](https://www.plantuml.com/plantuml/svg/ZPB1JiCm48Rl-nIxr2ppdR0WjP802X4KjxJPq1Yl4FsgMw0kqzjyARPc4rALqcM5VbaYQKFVqeHeNzBjl6lp6hxk3fzOHl5lspM5JZkekRjBMI6Ic5RWo3ByZR3B9F9LZGrYhYsrDylh5qx0iEy-4F-B1dJ4kptJT7wdkL5JT3wRYAQJGTEsWJDRbiAKyxh1UNuOBnV0bCvYhbOdDRk7g5vxDbxIoSSfk_7u_dM3wxZG6yLwH_1Q-ONNOC5jKxgZktmzl_uX0000)
+https://drive.google.com/file/d/16mcVnoDfeViLMqb0MBgfQetY0V4lh5AG/view?usp=sharing
 
 ## 2. Technology Stack
 
