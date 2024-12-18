@@ -1,0 +1,34 @@
+flowchart TD
+    A[User] -->|Registration Data| B{Frontend Validation}
+    B -->|Validated Data| C[Backend User Service]
+    C -->|Validate & Store| D[(MongoDB)]
+    C -->|Generate| E[JWT Token]
+    E -->|Return Token| F[Frontend Authentication Context]
+
+    G[User] -->|Card Design Input| H[Frontend V-Card Creation Interface]
+    H -->|Real-time Validation| I{Client-side Validation}
+    I -->|Validated Design| J[Temporary Local Storage]
+    J -->|Submit| K[Backend Card Service]
+    K -->|Store Metadata| D
+    K -->|Generate| L[QR Code]
+    K -->|Upload| M[AWS S3]
+    M -->|Return URL| K
+    K -->|Send Card URL| H
+
+    N[User] -->|Share Request| O[Frontend Sharing Module]
+    O -->|Generate Link| P[Backend Sharing Service]
+    P -->|Create Permissions| D
+    P -->|Generate| Q[Unique Share Link]
+    P -->|Create| R[QR Code]
+    Q -->|Return Share Options| O
+
+    S[External Users] -->|Access Shared Link| T[Link Tracking Service]
+    T -->|Log Access| D
+    T -->|Validate Permissions| U[Access Control]
+    U -->|Retrieve Card| V[Card Retrieval Service]
+    V -->|Fetch Card Data| D
+    V -->|Return Card| S
+
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style D fill:#bbf,stroke:#f66,stroke-width:2px
+    style M fill:#bfb,stroke:#333,stroke-width:2px
