@@ -27,7 +27,7 @@ The V-Card application is a digital business card creation and sharing platform 
   - Yup (Form Validation)
 
 #### Backend
-- **Language**: Node.js with Express.js
+- **Language**: Spring Boot
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
 - **File Storage**: AWS S3
